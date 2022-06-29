@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #444;
+  background-color: #f3f3f3;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.grid-container {
+  /*grid-template-rows: 40px 30px auto;*/
+  width: 450px;
+  height: 350px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+  margin-top: 150px;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-rows: 4fr 4fr auto;
+  row-gap: 5px;
+}
+
+/* 1. Result*/
+.result {
+  /*grid-column-start: 1;
+  grid-column-end: 2;*/
+  display: grid;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: right;
+  font-size: 50px;
+  padding: 5px 0px 5px 90px;
+  background-color: rgb(196, 196, 196);
+}
+
+/* 2. Arthimatic operation's button lookout*/
+.operation {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: aquamarine;
+}
+
+/* Addition Button */
+.addition:hover,
+.addition {
+  font-size: 30px;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  color: darkred;
+  background-color: aquamarine;
+}
+
+/* Subtraction Button */
+.subtraction:hover,
+.subtraction {
+  font-size: 30px;
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  color: darkred;
+  background-color: aquamarine;
+}
+
+/* Multiplication Button */
+.multiplication:hover,
+.multiplication {
+  font-size: 30px;
+  text-align: center;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  color: darkred;
+  background-color: aquamarine;
+}
+
+/* Division Button */
+.division:hover,
+.division {
+  font-size: 30px;
+  text-align: center;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  color: darkred;
+  background-color: aquamarine;
+}
+
+/* All Clear Button */
+.clear-all:hover,
+.clear-all {
+  font-size: 30px;
+  text-align: center;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  color: red;
+  background-color: aquamarine;
+}
+
+/* Contains NUMERALS & EQUALITY SIGN */
+.grid-calculation {
+  display: grid;
+  grid-template-columns: 280px 30px;
+  background-color: rgb(238, 175, 188);
+}
+
+/* 3. Number Pad */
+.grid-numPad {
+  display: grid;
+  width: 280px;
+  box-sizing: border-box;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  gap: 5px;
+  padding: 10px;
+}
+
+.equality-sign {
+  /* width: 30px; */
+  display: inline-block;
+  box-sizing: border-box;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: rgb(255, 121, 80);
+  padding: 80px;
+}
+
+.equal:hover,
+.equal {
+  /* width: 30px; */
+  box-sizing: border-box;
+  color: darkred;
+  font-size: 40px;
+  text-align: center;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+/* Numerals */
+.item7:hover,
+.titem7:focus,
+.item7 {
+  text-align: center;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: bisque;
+  color: darkred;
+}
+
+.item8:hover,
+.item8:focus,
+.item8 {
+  text-align: center;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: bisque;
+  color: darkred;
+}
+
+.item9:hover,
+.item9 {
+  text-align: center;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: bisque;
+  color: darkred;
+}
+
+.item4:hover,
+.item4 {
+  text-align: center;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: bisque;
+  color: darkred;
+}
+
+.item5:hover,
+.item5 {
+  text-align: center;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: bisque;
+  color: darkred;
+}
+
+.item6:hover,
+.item6 {
+  text-align: center;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: bisque;
+  color: darkred;
+}
+
+.item1:hover,
+.item1 {
+  text-align: center;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: bisque;
+  color: darkred;
+}
+
+.item2:hover,
+.item2 {
+  text-align: center;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: bisque;
+  color: darkred;
+}
+
+.item3:hover,
+.item3 {
+  text-align: center;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: bisque;
+  color: darkred;
+}
+
+.itemC:hover,
+.itemC {
+  text-align: center;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: bisque;
+  color: black;
+}
+
+.item0:hover,
+.item0 {
+  text-align: center;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: bisque;
+  color: darkred;
+}
+
+.item-decimal:hover,
+.item-decimal {
+  text-align: center;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: bisque;
+  color: darkred;
+  padding-bottom: 10px;
+}
